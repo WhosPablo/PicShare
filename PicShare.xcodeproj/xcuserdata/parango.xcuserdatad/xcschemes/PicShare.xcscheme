@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14B715AC1BCF323200E74BCE"
+               BlueprintIdentifier = "14B716041BCF348F00E74BCE"
                BuildableName = "PicShare.app"
                BlueprintName = "PicShare"
                ReferencedContainer = "container:PicShare.xcodeproj">
@@ -28,21 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14B715C01BCF323200E74BCE"
-               BuildableName = "PicShareTests.xctest"
-               BlueprintName = "PicShareTests"
-               ReferencedContainer = "container:PicShare.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14B715AC1BCF323200E74BCE"
+            BlueprintIdentifier = "14B716041BCF348F00E74BCE"
             BuildableName = "PicShare.app"
             BlueprintName = "PicShare"
             ReferencedContainer = "container:PicShare.xcodeproj">
@@ -65,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14B715AC1BCF323200E74BCE"
+            BlueprintIdentifier = "14B716041BCF348F00E74BCE"
             BuildableName = "PicShare.app"
             BlueprintName = "PicShare"
             ReferencedContainer = "container:PicShare.xcodeproj">
@@ -84,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14B715AC1BCF323200E74BCE"
+            BlueprintIdentifier = "14B716041BCF348F00E74BCE"
             BuildableName = "PicShare.app"
             BlueprintName = "PicShare"
             ReferencedContainer = "container:PicShare.xcodeproj">

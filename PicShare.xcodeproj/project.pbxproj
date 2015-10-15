@@ -7,105 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14B715B11BCF323200E74BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B715B01BCF323200E74BCE /* AppDelegate.swift */; };
-		14B715B31BCF323200E74BCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B715B21BCF323200E74BCE /* ViewController.swift */; };
-		14B715B61BCF323200E74BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B715B41BCF323200E74BCE /* Main.storyboard */; };
-		14B715B81BCF323200E74BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B715B71BCF323200E74BCE /* Assets.xcassets */; };
-		14B715BB1BCF323200E74BCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B715B91BCF323200E74BCE /* LaunchScreen.storyboard */; };
-		14B715C61BCF323200E74BCE /* PicShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B715C51BCF323200E74BCE /* PicShareTests.swift */; };
+		14B716091BCF348F00E74BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B716081BCF348F00E74BCE /* AppDelegate.swift */; };
+		14B7160B1BCF348F00E74BCE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7160A1BCF348F00E74BCE /* StartViewController.swift */; };
+		14B7160E1BCF348F00E74BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B7160C1BCF348F00E74BCE /* Main.storyboard */; };
+		14B716101BCF348F00E74BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B7160F1BCF348F00E74BCE /* Assets.xcassets */; };
+		14B716131BCF348F00E74BCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B716111BCF348F00E74BCE /* LaunchScreen.storyboard */; };
+		14EDEDED1BCF54630082A5D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDEDEC1BCF54630082A5D3 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		38EA9B712060F3A42B5BACD8 /* Pods_PicShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA174BFD5984F71E0D349BA8 /* Pods_PicShare.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		14B715C21BCF323200E74BCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14B715A51BCF323200E74BCE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14B715AC1BCF323200E74BCE;
-			remoteInfo = PicShare;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		14B715AD1BCF323200E74BCE /* PicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14B715B01BCF323200E74BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14B715B21BCF323200E74BCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14B715B51BCF323200E74BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14B715B71BCF323200E74BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14B715BA1BCF323200E74BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14B715BC1BCF323200E74BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14B715C11BCF323200E74BCE /* PicShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14B715C51BCF323200E74BCE /* PicShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicShareTests.swift; sourceTree = "<group>"; };
-		14B715C71BCF323200E74BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B716051BCF348F00E74BCE /* PicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B716081BCF348F00E74BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14B7160A1BCF348F00E74BCE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		14B7160D1BCF348F00E74BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14B7160F1BCF348F00E74BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14B716121BCF348F00E74BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14B716141BCF348F00E74BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14EDEDE91BCF39CF0082A5D3 /* PicShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicShare-Bridging-Header.h"; sourceTree = "<group>"; };
+		14EDEDEC1BCF54630082A5D3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4EBFF1BF335BCBCBAB4F8C2F /* Pods-PicShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicShare/Pods-PicShare.debug.xcconfig"; sourceTree = "<group>"; };
+		BA174BFD5984F71E0D349BA8 /* Pods_PicShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E648F7ADF318D5E2919334AF /* Pods-PicShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicShare/Pods-PicShare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14B715AA1BCF323200E74BCE /* Frameworks */ = {
+		14B716021BCF348F00E74BCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14B715BE1BCF323200E74BCE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				38EA9B712060F3A42B5BACD8 /* Pods_PicShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B715A41BCF323200E74BCE = {
+		14B715FC1BCF348F00E74BCE = {
 			isa = PBXGroup;
 			children = (
-				14B715AF1BCF323200E74BCE /* PicShare */,
-				14B715C41BCF323200E74BCE /* PicShareTests */,
-				14B715AE1BCF323200E74BCE /* Products */,
+				14B716071BCF348F00E74BCE /* PicShare */,
+				14B716061BCF348F00E74BCE /* Products */,
+				25BAD0062ADAE42A1F3BF856 /* Pods */,
+				653D21E04AE04FDAB8CD9521 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		14B715AE1BCF323200E74BCE /* Products */ = {
+		14B716061BCF348F00E74BCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14B715AD1BCF323200E74BCE /* PicShare.app */,
-				14B715C11BCF323200E74BCE /* PicShareTests.xctest */,
+				14B716051BCF348F00E74BCE /* PicShare.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14B715AF1BCF323200E74BCE /* PicShare */ = {
+		14B716071BCF348F00E74BCE /* PicShare */ = {
 			isa = PBXGroup;
 			children = (
-				14B715B01BCF323200E74BCE /* AppDelegate.swift */,
-				14B715B21BCF323200E74BCE /* ViewController.swift */,
-				14B715B41BCF323200E74BCE /* Main.storyboard */,
-				14B715B71BCF323200E74BCE /* Assets.xcassets */,
-				14B715B91BCF323200E74BCE /* LaunchScreen.storyboard */,
-				14B715BC1BCF323200E74BCE /* Info.plist */,
+				14B716081BCF348F00E74BCE /* AppDelegate.swift */,
+				14B7160A1BCF348F00E74BCE /* StartViewController.swift */,
+				14EDEDEC1BCF54630082A5D3 /* MainViewController.swift */,
+				14B7160C1BCF348F00E74BCE /* Main.storyboard */,
+				14B7160F1BCF348F00E74BCE /* Assets.xcassets */,
+				14B716111BCF348F00E74BCE /* LaunchScreen.storyboard */,
+				14B716141BCF348F00E74BCE /* Info.plist */,
+				14EDEDE91BCF39CF0082A5D3 /* PicShare-Bridging-Header.h */,
 			);
 			path = PicShare;
 			sourceTree = "<group>";
 		};
-		14B715C41BCF323200E74BCE /* PicShareTests */ = {
+		25BAD0062ADAE42A1F3BF856 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				14B715C51BCF323200E74BCE /* PicShareTests.swift */,
-				14B715C71BCF323200E74BCE /* Info.plist */,
+				4EBFF1BF335BCBCBAB4F8C2F /* Pods-PicShare.debug.xcconfig */,
+				E648F7ADF318D5E2919334AF /* Pods-PicShare.release.xcconfig */,
 			);
-			path = PicShareTests;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		653D21E04AE04FDAB8CD9521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA174BFD5984F71E0D349BA8 /* Pods_PicShare.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14B715AC1BCF323200E74BCE /* PicShare */ = {
+		14B716041BCF348F00E74BCE /* PicShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14B715CA1BCF323200E74BCE /* Build configuration list for PBXNativeTarget "PicShare" */;
+			buildConfigurationList = 14B716171BCF348F00E74BCE /* Build configuration list for PBXNativeTarget "PicShare" */;
 			buildPhases = (
-				14B715A91BCF323200E74BCE /* Sources */,
-				14B715AA1BCF323200E74BCE /* Frameworks */,
-				14B715AB1BCF323200E74BCE /* Resources */,
+				1849661CEDDB2A1FA62D9E05 /* Check Pods Manifest.lock */,
+				14B716011BCF348F00E74BCE /* Sources */,
+				14B716021BCF348F00E74BCE /* Frameworks */,
+				14B716031BCF348F00E74BCE /* Resources */,
+				68D7103058AB8CBE8D84E9DE /* Embed Pods Frameworks */,
+				833AF59D8CA8CD0E0B1DC6E7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,48 +113,26 @@
 			);
 			name = PicShare;
 			productName = PicShare;
-			productReference = 14B715AD1BCF323200E74BCE /* PicShare.app */;
+			productReference = 14B716051BCF348F00E74BCE /* PicShare.app */;
 			productType = "com.apple.product-type.application";
-		};
-		14B715C01BCF323200E74BCE /* PicShareTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14B715CD1BCF323200E74BCE /* Build configuration list for PBXNativeTarget "PicShareTests" */;
-			buildPhases = (
-				14B715BD1BCF323200E74BCE /* Sources */,
-				14B715BE1BCF323200E74BCE /* Frameworks */,
-				14B715BF1BCF323200E74BCE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14B715C31BCF323200E74BCE /* PBXTargetDependency */,
-			);
-			name = PicShareTests;
-			productName = PicShareTests;
-			productReference = 14B715C11BCF323200E74BCE /* PicShareTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		14B715A51BCF323200E74BCE /* Project object */ = {
+		14B715FD1BCF348F00E74BCE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pablo Arango";
 				TargetAttributes = {
-					14B715AC1BCF323200E74BCE = {
+					14B716041BCF348F00E74BCE = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = J228S3CN2J;
-					};
-					14B715C01BCF323200E74BCE = {
-						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = J228S3CN2J;
-						TestTargetID = 14B715AC1BCF323200E74BCE;
 					};
 				};
 			};
-			buildConfigurationList = 14B715A81BCF323200E74BCE /* Build configuration list for PBXProject "PicShare" */;
+			buildConfigurationList = 14B716001BCF348F00E74BCE /* Build configuration list for PBXProject "PicShare" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,78 +140,103 @@
 				en,
 				Base,
 			);
-			mainGroup = 14B715A41BCF323200E74BCE;
-			productRefGroup = 14B715AE1BCF323200E74BCE /* Products */;
+			mainGroup = 14B715FC1BCF348F00E74BCE;
+			productRefGroup = 14B716061BCF348F00E74BCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14B715AC1BCF323200E74BCE /* PicShare */,
-				14B715C01BCF323200E74BCE /* PicShareTests */,
+				14B716041BCF348F00E74BCE /* PicShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14B715AB1BCF323200E74BCE /* Resources */ = {
+		14B716031BCF348F00E74BCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B715BB1BCF323200E74BCE /* LaunchScreen.storyboard in Resources */,
-				14B715B81BCF323200E74BCE /* Assets.xcassets in Resources */,
-				14B715B61BCF323200E74BCE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14B715BF1BCF323200E74BCE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				14B716131BCF348F00E74BCE /* LaunchScreen.storyboard in Resources */,
+				14B716101BCF348F00E74BCE /* Assets.xcassets in Resources */,
+				14B7160E1BCF348F00E74BCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		14B715A91BCF323200E74BCE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		1849661CEDDB2A1FA62D9E05 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B715B31BCF323200E74BCE /* ViewController.swift in Sources */,
-				14B715B11BCF323200E74BCE /* AppDelegate.swift in Sources */,
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-		14B715BD1BCF323200E74BCE /* Sources */ = {
+		68D7103058AB8CBE8D84E9DE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicShare/Pods-PicShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833AF59D8CA8CD0E0B1DC6E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicShare/Pods-PicShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B716011BCF348F00E74BCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B715C61BCF323200E74BCE /* PicShareTests.swift in Sources */,
+				14EDEDED1BCF54630082A5D3 /* MainViewController.swift in Sources */,
+				14B7160B1BCF348F00E74BCE /* StartViewController.swift in Sources */,
+				14B716091BCF348F00E74BCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		14B715C31BCF323200E74BCE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14B715AC1BCF323200E74BCE /* PicShare */;
-			targetProxy = 14B715C21BCF323200E74BCE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		14B715B41BCF323200E74BCE /* Main.storyboard */ = {
+		14B7160C1BCF348F00E74BCE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14B715B51BCF323200E74BCE /* Base */,
+				14B7160D1BCF348F00E74BCE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		14B715B91BCF323200E74BCE /* LaunchScreen.storyboard */ = {
+		14B716111BCF348F00E74BCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14B715BA1BCF323200E74BCE /* Base */,
+				14B716121BCF348F00E74BCE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -241,7 +244,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		14B715C81BCF323200E74BCE /* Debug */ = {
+		14B716151BCF348F00E74BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		14B715C91BCF323200E74BCE /* Release */ = {
+		14B716161BCF348F00E74BCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,81 +327,57 @@
 			};
 			name = Release;
 		};
-		14B715CB1BCF323200E74BCE /* Debug */ = {
+		14B716181BCF348F00E74BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBFF1BF335BCBCBAB4F8C2F /* Pods-PicShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PicShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pabloarango.PicShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PicShare/PicShare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		14B715CC1BCF323200E74BCE /* Release */ = {
+		14B716191BCF348F00E74BCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E648F7ADF318D5E2919334AF /* Pods-PicShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PicShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pabloarango.PicShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		14B715CE1BCF323200E74BCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PicShareTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pabloarango.PicShareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicShare.app/PicShare";
-			};
-			name = Debug;
-		};
-		14B715CF1BCF323200E74BCE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PicShareTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pabloarango.PicShareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicShare.app/PicShare";
+				SWIFT_OBJC_BRIDGING_HEADER = "PicShare/PicShare-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14B715A81BCF323200E74BCE /* Build configuration list for PBXProject "PicShare" */ = {
+		14B716001BCF348F00E74BCE /* Build configuration list for PBXProject "PicShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14B715C81BCF323200E74BCE /* Debug */,
-				14B715C91BCF323200E74BCE /* Release */,
+				14B716151BCF348F00E74BCE /* Debug */,
+				14B716161BCF348F00E74BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14B715CA1BCF323200E74BCE /* Build configuration list for PBXNativeTarget "PicShare" */ = {
+		14B716171BCF348F00E74BCE /* Build configuration list for PBXNativeTarget "PicShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14B715CB1BCF323200E74BCE /* Debug */,
-				14B715CC1BCF323200E74BCE /* Release */,
+				14B716181BCF348F00E74BCE /* Debug */,
+				14B716191BCF348F00E74BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		14B715CD1BCF323200E74BCE /* Build configuration list for PBXNativeTarget "PicShareTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14B715CE1BCF323200E74BCE /* Debug */,
-				14B715CF1BCF323200E74BCE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 14B715A51BCF323200E74BCE /* Project object */;
+	rootObject = 14B715FD1BCF348F00E74BCE /* Project object */;
 }
