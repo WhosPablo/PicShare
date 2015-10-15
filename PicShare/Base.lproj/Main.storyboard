@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1034" y="357"/>
         </scene>
-        <!--Start View Controller-->
+        <!--Sign Up Log In View Controller-->
         <scene sceneID="Txt-kJ-bcp">
             <objects>
-                <viewController id="kj0-mS-4Lq" customClass="StartViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kj0-mS-4Lq" customClass="SignUpLogInViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Jx-ZT-WBI"/>
                         <viewControllerLayoutGuide type="bottom" id="biP-MD-1Fz"/>
@@ -80,17 +80,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npU-Db-mkU">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npU-Db-mkU">
                                 <rect key="frame" x="20" y="70" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="989-Ik-46f">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="989-Ik-46f">
                                 <rect key="frame" x="20" y="120" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZM-BT-t54">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZM-BT-t54">
                                 <rect key="frame" x="20" y="170" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
@@ -125,6 +125,15 @@
                                     <action selector="signUpAction:" destination="kj0-mS-4Lq" eventType="touchUpInside" id="ecx-CF-Tam"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Invalid Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-RJ-7Xy">
+                                <rect key="frame" x="27" y="30" width="96.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Shq-b2-sg8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -133,10 +142,12 @@
                             <constraint firstItem="e8Z-in-ITJ" firstAttribute="bottom" secondItem="Cqu-lu-N8P" secondAttribute="bottom" id="Fxs-Rt-BSU"/>
                             <constraint firstItem="bdg-ut-LkO" firstAttribute="trailing" secondItem="JZM-BT-t54" secondAttribute="trailing" id="H1D-65-cCD"/>
                             <constraint firstItem="e8Z-in-ITJ" firstAttribute="top" secondItem="35A-fW-8o4" secondAttribute="top" id="Imf-g6-gBb"/>
+                            <constraint firstItem="npU-Db-mkU" firstAttribute="top" secondItem="g3y-RJ-7Xy" secondAttribute="bottom" constant="19" id="K0e-2i-FU9"/>
                             <constraint firstItem="Cqu-lu-N8P" firstAttribute="centerX" secondItem="jaV-I4-wGF" secondAttribute="centerX" constant="-45" id="Qu7-kU-s0D"/>
                             <constraint firstItem="e8Z-in-ITJ" firstAttribute="centerX" secondItem="bdg-ut-LkO" secondAttribute="centerX" id="TQ0-p9-lAJ"/>
-                            <constraint firstItem="989-Ik-46f" firstAttribute="top" secondItem="npU-Db-mkU" secondAttribute="bottom" constant="20" id="Vcc-g4-Rx6"/>
-                            <constraint firstItem="JZM-BT-t54" firstAttribute="top" secondItem="989-Ik-46f" secondAttribute="bottom" constant="20" id="XIP-fD-KVB"/>
+                            <constraint firstItem="989-Ik-46f" firstAttribute="top" secondItem="npU-Db-mkU" secondAttribute="bottom" constant="25" id="Vcc-g4-Rx6"/>
+                            <constraint firstItem="JZM-BT-t54" firstAttribute="top" secondItem="989-Ik-46f" secondAttribute="bottom" constant="25" id="XIP-fD-KVB"/>
+                            <constraint firstItem="g3y-RJ-7Xy" firstAttribute="leading" secondItem="jaV-I4-wGF" secondAttribute="leadingMargin" constant="7" id="XRp-NU-c9W"/>
                             <constraint firstItem="JZM-BT-t54" firstAttribute="trailing" secondItem="989-Ik-46f" secondAttribute="trailing" id="YYW-pa-J6m"/>
                             <constraint firstItem="npU-Db-mkU" firstAttribute="leading" secondItem="989-Ik-46f" secondAttribute="leading" id="aZr-br-bgA"/>
                             <constraint firstItem="JZM-BT-t54" firstAttribute="leading" secondItem="989-Ik-46f" secondAttribute="leading" id="dYt-Xb-9cl"/>
@@ -146,11 +157,12 @@
                             <constraint firstItem="JZM-BT-t54" firstAttribute="leading" secondItem="bdg-ut-LkO" secondAttribute="leading" id="rRZ-2x-hm7"/>
                             <constraint firstItem="npU-Db-mkU" firstAttribute="trailing" secondItem="989-Ik-46f" secondAttribute="trailing" id="sqY-Eh-mCH"/>
                             <constraint firstItem="e8Z-in-ITJ" firstAttribute="leading" secondItem="jaV-I4-wGF" secondAttribute="leading" id="vT9-6V-ecP"/>
-                            <constraint firstItem="bdg-ut-LkO" firstAttribute="top" secondItem="JZM-BT-t54" secondAttribute="bottom" constant="20" id="vTL-gl-5m1"/>
+                            <constraint firstItem="bdg-ut-LkO" firstAttribute="top" secondItem="JZM-BT-t54" secondAttribute="bottom" constant="25" id="vTL-gl-5m1"/>
                             <constraint firstItem="e8Z-in-ITJ" firstAttribute="centerY" secondItem="jaV-I4-wGF" secondAttribute="centerY" id="yWc-Sv-DZa"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signUpAlert" destination="g3y-RJ-7Xy" id="vXV-5g-Zsi"/>
                         <outlet property="signUpEmail" destination="989-Ik-46f" id="1U5-DE-Nkb"/>
                         <outlet property="signUpPassword" destination="JZM-BT-t54" id="gpg-tw-j2F"/>
                         <outlet property="signUpPasswordVerification" destination="bdg-ut-LkO" id="D3K-Je-BdK"/>
@@ -180,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="1824" y="1177"/>
         </scene>
-        <!--Start View Controller-->
+        <!--Sign Up Log In View Controller-->
         <scene sceneID="2st-IW-WE5">
             <objects>
-                <viewController id="dyu-yW-OPG" customClass="StartViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dyu-yW-OPG" customClass="SignUpLogInViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VjJ-8l-CMk"/>
                         <viewControllerLayoutGuide type="bottom" id="69o-0a-CEv"/>
