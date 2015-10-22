@@ -12,6 +12,7 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var logInUsername: UITextField!
     @IBOutlet weak var logInPassword: UITextField!
+    @IBOutlet weak var logInAlert: UILabel!
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView( frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
     
@@ -40,8 +41,9 @@ class LogInViewController: UIViewController {
         
         if(username?.utf16.count < 4 || password?.utf16.count<6){
             
-            let alert = UIAlertView(title: "Invalid", message: "Invalid password or email", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
+            self.logInAlert.text = "Invalid password and/or email";
+            self.logInAlert.hidden = false;
+            print("error: password too short");
             
         } else {
             self.actInd.startAnimating()
@@ -53,11 +55,14 @@ class LogInViewController: UIViewController {
                 
                 if(error == nil){
                     
+                    self.logInAlert.hidden = true;
                     self.performSegueWithIdentifier("logInDone", sender: self);
                 } else {
                     let errorString = error!.localizedDescription
-                    let alert = UIAlertView(title: "Error", message: "\(errorString)", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
+                    print(errorString);
+                    
+                    self.logInAlert.text = "Invalid password and/or email";
+                    self.logInAlert.hidden = false;
                 }
             })
             

@@ -19,9 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        let keyDictionary = NSDictionary(contentsOfFile: NSBundle.mainBundle().pathForResource("Keys", ofType: "plist")!)
+        
+        let appId = String(keyDictionary!.objectForKey("parseApplicationId")!)
+        print(appId)
+        let clientKey = String(keyDictionary!.objectForKey("parseClientKey")!)
+        
         // Initialize Parse.
-        Parse.setApplicationId("NGUVZU55llaDBWrUrSN7giT4axIP3q99ty3vQufD",
-            clientKey: "0nd7B4hym6am5khlmOSxSREXaDE2dMpObSlUIxAh")
+        Parse.setApplicationId(appId,
+            clientKey: clientKey)
         
         return true
     }
