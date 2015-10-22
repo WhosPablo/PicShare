@@ -13,7 +13,18 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if PFUser.currentUser() == nil {
+            self.performSegueWithIdentifier("logInSignUpShow", sender: self)
+            return
+        }
+        
+        self.performSegueWithIdentifier("mainTabsShow", sender: self)
         
         
     }

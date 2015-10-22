@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'PicShare' do
 	pod 'Parse'
+    pod 'ParseUI'
 end
 

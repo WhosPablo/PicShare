@@ -8,7 +8,7 @@
 import Parse
 import UIKit
 
-class SignUpLogInViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     @IBOutlet weak var signUpUsername: UITextField!
     @IBOutlet weak var signUpEmail: UITextField!
@@ -16,9 +16,6 @@ class SignUpLogInViewController: UIViewController {
     @IBOutlet weak var signUpPasswordVerification: UITextField!
     
     @IBOutlet weak var signUpAlert: UILabel!
-    
-    @IBOutlet weak var logInUsername: UITextField!
-    @IBOutlet weak var logInPassword: UITextField!
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView( frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
     
@@ -52,27 +49,34 @@ class SignUpLogInViewController: UIViewController {
         
         
         if(username?.utf16.count<1){
-            self.signUpAlert.text = "Missing Username".capitalizedString
+            self.signUpAlert.text = "Username field is empty"
             self.signUpAlert.hidden = false
             self.actInd.stopAnimating()
+            return
         }
         
-        if(password?.utf16.count<1){
-            self.signUpAlert.text = "Missing Password".capitalizedString
+        if(email?.utf16.count<5){
+            self.signUpAlert.text = "Email field is empty or invalid"
             self.signUpAlert.hidden = false
+            self.actInd.stopAnimating()
+            return
+        }
+        
+        if(password?.utf16.count<6){
+            self.signUpAlert.text = "Password field is empty or too short"
+            self.signUpAlert.hidden = false
+            self.actInd.stopAnimating()
+            return
         } else if (password != passwordVerification){
             self.signUpAlert.text = "Passwords do not match"
             self.signUpAlert.hidden = false
             self.actInd.stopAnimating()
+            return
         }
         
-        if(email?.utf16.count<1){
-            self.signUpAlert.text = "Missing Username".capitalizedString
-            self.signUpAlert.hidden = false
-            self.actInd.stopAnimating()
-        }
         
-        if (username?.utf16.count>=1 && password?.utf16.count>=1 && email?.utf16.count>=1 ){
+        
+        if (username?.utf16.count>=1 && password?.utf16.count>=1 && email?.utf16.count>=1 && password == passwordVerification){
             self.actInd.startAnimating()
             
             let newUser = PFUser()
@@ -87,13 +91,15 @@ class SignUpLogInViewController: UIViewController {
                 
                 if(error == nil){
                     self.signUpAlert.hidden = true
-                    let alert = UIAlertView(title: "Logged In", message: "Success", delegate: self, cancelButtonTitle: "OK")
-                    alert.show();
+                    self.performSegueWithIdentifier("signUpDone", sender: self);
                     
                 } else {
-                    let errorString = error!.localizedDescription
                     
-                    self.signUpAlert.text = "\(errorString)".capitalizedString
+                    var errorString = error!.localizedDescription
+                    
+                    errorString.replaceRange(errorString.startIndex...errorString.startIndex, with: String(errorString[errorString.startIndex]).uppercaseString)
+                    
+                    self.signUpAlert.text = errorString
                     self.signUpAlert.hidden = false
                 }
             
@@ -101,45 +107,11 @@ class SignUpLogInViewController: UIViewController {
             })
         }
         
-            
-        
-        
-        
     }
-
-    @IBAction func logInAction(sender: AnyObject) {
+    
+    @IBAction func cancelAction(sender: AnyObject) {
         
-        let username = self.logInUsername.text;
-        let password = self.logInPassword.text;
-        
-        if(username?.utf16.count < 4 || password?.utf16.count<6){
-            
-            let alert = UIAlertView(title: "Invalid", message: "Invalid password or email", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-            
-        } else {
-            self.actInd.startAnimating()
-            
-            PFUser.logInWithUsernameInBackground(username!, password: password!, block: {(user:PFUser?, error: NSError?)->
-                Void in
-                
-                self.actInd.stopAnimating()
-                
-                if(error == nil){
-                    let alert = UIAlertView(title: "Logged In", message: "Success", delegate: self, cancelButtonTitle: "OK")
-                    alert.show();
-                } else {
-                    let errorString = error!.localizedDescription
-                    let alert = UIAlertView(title: "Error", message: "\(errorString)", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
-                }
-                
-                
-            })
-            
-        }
-        
-        
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-PicShare/Bolts.framework"
   install_framework "Pods-PicShare/Parse.framework"
+  install_framework "Pods-PicShare/ParseUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-PicShare/Bolts.framework"
   install_framework "Pods-PicShare/Parse.framework"
+  install_framework "Pods-PicShare/ParseUI.framework"
 fi
