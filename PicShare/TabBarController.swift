@@ -16,12 +16,12 @@ class TabBarController: UITabBarController {
         
     
         
-        let selectedColor = UIColor(red: CGFloat(41)/255.0, green: CGFloat(128)/255.0, blue: CGFloat(185)/255.0, alpha: CGFloat(1))
+        let selectedColor = UIColor(red: CGFloat(41)/255.0, green: CGFloat(128)/255.0, blue: CGFloat(185)/255.0, alpha: CGFloat(1));
         
-        self.tabBar.tintColor = UIColor.whiteColor()
+        self.tabBar.tintColor = UIColor.whiteColor();
         
         for tbi:UITabBarItem in self.tabBar.items!{
-            tbi.image = tbi.image?.imageWithColor(selectedColor).imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            tbi.image = tbi.image?.imageWithColor(selectedColor).imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
         }
         
     }

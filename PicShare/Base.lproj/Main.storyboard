@@ -208,42 +208,53 @@
             </objects>
             <point key="canvasLocation" x="180" y="1795"/>
         </scene>
-        <!--User-->
-        <scene sceneID="I99-5Y-SrU">
+        <!--User View Controller-->
+        <scene sceneID="7Gw-LH-F94">
             <objects>
-                <viewController id="Ijy-pb-YBx" customClass="UserViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vdo-Wr-zPh"/>
-                        <viewControllerLayoutGuide type="bottom" id="7gk-uk-5c3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SXY-Iw-6sT">
+                <tableViewController id="UgQ-Gw-Xt2" customClass="UserViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GAX-Po-WD5">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="User" id="VZJ-PW-vVA">
-                        <barButtonItem key="rightBarButtonItem" title=" " style="done" id="pYe-aO-OxD">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4qY-yF-ed0">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jDb-sQ-yaP">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jDb-sQ-yaP" id="fdo-20-Gjh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UgQ-Gw-Xt2" id="oqr-yE-oyp"/>
+                            <outlet property="delegate" destination="UgQ-Gw-Xt2" id="4Ni-71-yVN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="u0l-Xt-r6b">
+                        <barButtonItem key="rightBarButtonItem" title=" " style="done" id="4wO-eB-FCa">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WWK-tk-QQD">
                                 <rect key="frame" x="510" y="7" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="LOG OUT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="logOutAction:" destination="Ijy-pb-YBx" eventType="touchUpInside" id="DAJ-cs-UHo"/>
-                                </connections>
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="logOutAction:" destination="UgQ-Gw-Xt2" id="7YT-lN-Wpz"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="UC8-mf-W8r" kind="showDetail" identifier="logOutDone" id="YAR-Oq-FaT"/>
+                        <outlet property="logOutButton" destination="WWK-tk-QQD" id="GEN-Bv-hzv"/>
+                        <segue destination="UC8-mf-W8r" kind="showDetail" identifier="logOutDone" action="showViewController:sender:" id="34s-Tw-NXa"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6J8-ac-dkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41y-Zu-la9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="1010"/>
+            <point key="canvasLocation" x="2714" y="1010"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="2st-IW-WE5">
@@ -354,7 +365,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="SuU-0D-zCH" kind="relationship" relationship="viewControllers" id="fHz-xe-6mZ"/>
-                        <segue destination="tXZ-1h-YrN" kind="relationship" relationship="viewControllers" id="svQ-hs-yTe"/>
+                        <segue destination="fTS-fE-A6k" kind="relationship" relationship="viewControllers" id="BN2-wG-sgF"/>
                         <segue destination="cpK-ya-1UH" kind="relationship" relationship="viewControllers" id="eHo-Xg-HT0"/>
                     </connections>
                 </tabBarController>
@@ -382,34 +393,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Icm-qI-ivz" kind="relationship" relationship="rootViewController" id="5DK-Eb-Qd9"/>
+                        <segue destination="Icm-qI-ivz" kind="relationship" relationship="rootViewController" id="KuN-g1-o0l"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNj-H0-Ues" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931" y="-474"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="egh-EZ-CIN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tXZ-1h-YrN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="camera" id="6EO-1O-Au7">
-                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1Az-dm-Q4c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fTS-fE-A6k" kind="relationship" relationship="rootViewController" id="aJE-Rt-meN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FNe-hW-OBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1931" y="266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SJJ-Fd-FUy">
@@ -431,7 +420,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ijy-pb-YBx" kind="relationship" relationship="rootViewController" id="dpd-LB-Owg"/>
+                        <segue destination="UgQ-Gw-Xt2" kind="relationship" relationship="rootViewController" id="lfc-xz-HsI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdQ-w6-v7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,28 +431,6 @@
         <scene sceneID="I5l-YP-1Ta">
             <objects>
                 <tableViewController id="Icm-qI-ivz" customClass="FriendsTableViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e8Q-vu-wUI">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexBackgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rqi-C9-ARF">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rqi-C9-ARF" id="WyS-sh-wdA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Icm-qI-ivz" id="AE2-bB-5DX"/>
-                            <outlet property="delegate" destination="Icm-qI-ivz" id="HZ3-AG-HYo"/>
-                        </connections>
-                    </tableView>
                     <navigationItem key="navigationItem" title="Friends" id="P8Q-9d-rjr">
                         <barButtonItem key="backBarButtonItem" title="BACK" id="2v3-bx-7hf"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="1mO-Kr-Gw3">
@@ -473,21 +440,24 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="UgQ-Gw-Xt2" kind="show" identifier="showUser" id="Rsq-xE-NtH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsP-lR-hTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="-474"/>
+            <point key="canvasLocation" x="3314" y="-474"/>
         </scene>
         <!--Search-->
         <scene sceneID="GpC-G1-Edt">
             <objects>
-                <tableViewController id="8Ss-gi-5MA" sceneMemberID="viewController">
+                <tableViewController id="8Ss-gi-5MA" customClass="SearchUsersTableViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="z6B-O6-dd9">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="so6-NX-BIc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" id="so6-NX-BIc">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="so6-NX-BIc" id="ePM-yw-QKG">
@@ -505,26 +475,79 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pN5-LE-nKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3403" y="-474"/>
+            <point key="canvasLocation" x="4087" y="-474"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="NDI-og-bvD">
             <objects>
-                <viewController id="fTS-fE-A6k" sceneMemberID="viewController">
+                <viewController id="fTS-fE-A6k" customClass="ImageViewController" customModule="PicShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dzl-KI-6IB"/>
                         <viewControllerLayoutGuide type="bottom" id="6jL-Eu-U36"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TM2-tw-XSs">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-VM-ciL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="521"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU6-Fv-iv9">
+                                <rect key="frame" x="19" y="521" width="48" height="30"/>
+                                <state key="normal" title="Library">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoFromLibrary:" destination="fTS-fE-A6k" eventType="touchUpInside" id="V9G-hE-pTB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAw-Fg-ayb">
+                                <rect key="frame" x="503" y="521" width="77" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shootPhoto:" destination="fTS-fE-A6k" eventType="touchUpInside" id="aVT-33-DnY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM0-Gw-xtu">
+                                <rect key="frame" x="232" y="521" width="136" height="30"/>
+                                <state key="normal" title="Upload to PicShare!">
+                                    <color key="titleColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImage:" destination="fTS-fE-A6k" eventType="touchUpInside" id="54I-6V-xHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sM0-Gw-xtu" firstAttribute="bottom" secondItem="6jL-Eu-U36" secondAttribute="top" id="0Ii-km-zNZ"/>
+                            <constraint firstItem="lU6-Fv-iv9" firstAttribute="leading" secondItem="TM2-tw-XSs" secondAttribute="leadingMargin" constant="-1" id="92c-Eg-YtV"/>
+                            <constraint firstItem="D7S-VM-ciL" firstAttribute="bottom" secondItem="sM0-Gw-xtu" secondAttribute="top" id="Ja2-gS-xmh"/>
+                            <constraint firstItem="NAw-Fg-ayb" firstAttribute="trailing" secondItem="TM2-tw-XSs" secondAttribute="trailingMargin" id="LEt-Qw-aPl"/>
+                            <constraint firstItem="sM0-Gw-xtu" firstAttribute="baseline" secondItem="NAw-Fg-ayb" secondAttribute="baseline" id="LfW-RY-xKB"/>
+                            <constraint firstItem="sM0-Gw-xtu" firstAttribute="baseline" secondItem="lU6-Fv-iv9" secondAttribute="baseline" id="QMK-tI-Yb1"/>
+                            <constraint firstAttribute="trailing" secondItem="D7S-VM-ciL" secondAttribute="trailing" id="Stg-83-dNW"/>
+                            <constraint firstItem="sM0-Gw-xtu" firstAttribute="centerX" secondItem="D7S-VM-ciL" secondAttribute="centerX" id="eeF-02-ipy"/>
+                            <constraint firstItem="D7S-VM-ciL" firstAttribute="top" secondItem="TM2-tw-XSs" secondAttribute="top" id="lwa-Rp-VaF"/>
+                            <constraint firstItem="D7S-VM-ciL" firstAttribute="leading" secondItem="TM2-tw-XSs" secondAttribute="leading" id="s5t-76-0cR"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="uep-0V-CK5">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="F59-Wd-EEf"/>
+                    <connections>
+                        <outlet property="myImageView" destination="D7S-VM-ciL" id="7yE-pe-iAV"/>
+                        <outlet property="uploadButton" destination="sM0-Gw-xtu" id="01c-yi-HHh"/>
+                        <segue destination="UgQ-Gw-Xt2" kind="show" identifier="photoSaved" id="yFM-Pe-Ggf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6H-CB-eb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="266"/>
+            <point key="canvasLocation" x="1931" y="266"/>
         </scene>
     </scenes>
     <resources>
@@ -534,6 +557,7 @@
         <image name="user" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fAl-Wu-MWW"/>
+        <segue reference="Rsq-xE-NtH"/>
+        <segue reference="34s-Tw-NXa"/>
     </inferredMetricsTieBreakers>
 </document>

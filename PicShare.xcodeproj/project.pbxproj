@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141205AD1BD9B9CE0006125E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141205AB1BD9B9CE0006125E /* UserTableViewCell.swift */; };
+		141205AE1BD9B9CE0006125E /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141205AC1BD9B9CE0006125E /* UserTableViewCell.xib */; };
+		141205B01BDB0A220006125E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141205AF1BDB0A220006125E /* ImageViewController.swift */; };
+		141205B31BDB28E10006125E /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141205B11BDB28E10006125E /* PhotoTableViewCell.swift */; };
+		141205B41BDB28E10006125E /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141205B21BDB28E10006125E /* PhotoTableViewCell.xib */; };
+		141205B61BDB330D0006125E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141205B51BDB330C0006125E /* HomeViewController.swift */; };
 		1448FE5A1BD1D9BF008E5C75 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448FE591BD1D9BF008E5C75 /* LogInViewController.swift */; };
 		1448FE5C1BD1E5AE008E5C75 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448FE5B1BD1E5AE008E5C75 /* FriendsTableViewController.swift */; };
 		1448FE5E1BD1E5FC008E5C75 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448FE5D1BD1E5FC008E5C75 /* UserViewController.swift */; };
 		1448FE621BD20FB0008E5C75 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448FE611BD20FB0008E5C75 /* TabBarController.swift */; };
-		1460B5DE1BD9761E001CA65B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1460B5DD1BD9761E001CA65B /* Keys.plist */; };
+		1460B5E01BD97F87001CA65B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1460B5DF1BD97F87001CA65B /* Keys.plist */; };
+		1460B5E21BD98350001CA65B /* SearchUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460B5E11BD98350001CA65B /* SearchUsersTableViewController.swift */; };
 		14B716091BCF348F00E74BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B716081BCF348F00E74BCE /* AppDelegate.swift */; };
 		14B7160B1BCF348F00E74BCE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7160A1BCF348F00E74BCE /* SignUpViewController.swift */; };
 		14B7160E1BCF348F00E74BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B7160C1BCF348F00E74BCE /* Main.storyboard */; };
@@ -22,11 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141205AB1BD9B9CE0006125E /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		141205AC1BD9B9CE0006125E /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		141205AF1BDB0A220006125E /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		141205B11BDB28E10006125E /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		141205B21BDB28E10006125E /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		141205B51BDB330C0006125E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1448FE591BD1D9BF008E5C75 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		1448FE5B1BD1E5AE008E5C75 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		1448FE5D1BD1E5FC008E5C75 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		1448FE611BD20FB0008E5C75 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		1460B5DD1BD9761E001CA65B /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		1460B5DF1BD97F87001CA65B /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		1460B5E11BD98350001CA65B /* SearchUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUsersTableViewController.swift; sourceTree = "<group>"; };
 		14B716051BCF348F00E74BCE /* PicShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B716081BCF348F00E74BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14B7160A1BCF348F00E74BCE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -79,13 +93,20 @@
 				1448FE591BD1D9BF008E5C75 /* LogInViewController.swift */,
 				14EDEDEC1BCF54630082A5D3 /* MainViewController.swift */,
 				1448FE5B1BD1E5AE008E5C75 /* FriendsTableViewController.swift */,
-				1460B5DD1BD9761E001CA65B /* Keys.plist */,
+				141205AB1BD9B9CE0006125E /* UserTableViewCell.swift */,
+				141205AC1BD9B9CE0006125E /* UserTableViewCell.xib */,
 				1448FE5D1BD1E5FC008E5C75 /* UserViewController.swift */,
 				1448FE611BD20FB0008E5C75 /* TabBarController.swift */,
+				1460B5E11BD98350001CA65B /* SearchUsersTableViewController.swift */,
+				141205AF1BDB0A220006125E /* ImageViewController.swift */,
+				141205B11BDB28E10006125E /* PhotoTableViewCell.swift */,
+				141205B51BDB330C0006125E /* HomeViewController.swift */,
+				141205B21BDB28E10006125E /* PhotoTableViewCell.xib */,
 				14B7160C1BCF348F00E74BCE /* Main.storyboard */,
 				14B7160F1BCF348F00E74BCE /* Assets.xcassets */,
 				14B716111BCF348F00E74BCE /* LaunchScreen.storyboard */,
 				14B716141BCF348F00E74BCE /* Info.plist */,
+				1460B5DF1BD97F87001CA65B /* Keys.plist */,
 				14EDEDE91BCF39CF0082A5D3 /* PicShare-Bridging-Header.h */,
 			);
 			path = PicShare;
@@ -170,10 +191,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1460B5DE1BD9761E001CA65B /* Keys.plist in Resources */,
+				141205B41BDB28E10006125E /* PhotoTableViewCell.xib in Resources */,
+				1460B5E01BD97F87001CA65B /* Keys.plist in Resources */,
 				14B716131BCF348F00E74BCE /* LaunchScreen.storyboard in Resources */,
 				14B716101BCF348F00E74BCE /* Assets.xcassets in Resources */,
 				14B7160E1BCF348F00E74BCE /* Main.storyboard in Resources */,
+				141205AE1BD9B9CE0006125E /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +256,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				14EDEDED1BCF54630082A5D3 /* MainViewController.swift in Sources */,
+				141205AD1BD9B9CE0006125E /* UserTableViewCell.swift in Sources */,
+				141205B01BDB0A220006125E /* ImageViewController.swift in Sources */,
 				1448FE5E1BD1E5FC008E5C75 /* UserViewController.swift in Sources */,
 				14B7160B1BCF348F00E74BCE /* SignUpViewController.swift in Sources */,
 				1448FE5C1BD1E5AE008E5C75 /* FriendsTableViewController.swift in Sources */,
 				1448FE621BD20FB0008E5C75 /* TabBarController.swift in Sources */,
 				1448FE5A1BD1D9BF008E5C75 /* LogInViewController.swift in Sources */,
+				1460B5E21BD98350001CA65B /* SearchUsersTableViewController.swift in Sources */,
 				14B716091BCF348F00E74BCE /* AppDelegate.swift in Sources */,
+				141205B31BDB28E10006125E /* PhotoTableViewCell.swift in Sources */,
+				141205B61BDB330D0006125E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,12 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let keyDictionary = NSDictionary(contentsOfFile: NSBundle.mainBundle().pathForResource("Keys", ofType: "plist")!)
         
         let appId = String(keyDictionary!.objectForKey("parseApplicationId")!)
-        print(appId)
         let clientKey = String(keyDictionary!.objectForKey("parseClientKey")!)
         
         // Initialize Parse.
         Parse.setApplicationId(appId,
             clientKey: clientKey)
+        
+        UINavigationBar.appearance().barStyle = .Black
+        UITabBar.appearance().barStyle = .Black
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        application.statusBarStyle = .LightContent
         
         return true
     }
@@ -53,6 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
 
 
 }

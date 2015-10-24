@@ -10,13 +10,12 @@ import Parse
 import ParseUI
 import Foundation
 
-class UserViewController: PFQueryTableViewController {
+class HomeViewController: PFQueryTableViewController {
     
     let cellIdentifier:String = "PhotoCell"
     
-    var user:String = ""
     
-    @IBOutlet weak var logOutButton: UIButton!
+   
     
     override func viewDidLoad() {
         tableView.registerNib(UINib(nibName: "PhotoTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -32,19 +31,7 @@ class UserViewController: PFQueryTableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        if(user.isEmpty){
-            user = PFUser.currentUser()!.username!
-        }
-        
-        if(user == PFUser.currentUser()!.username!){
-            logOutButton.hidden = false;
-            logOutButton.addTarget(self, action: "logOutAction:", forControlEvents: .TouchUpInside)
-        }
-        
-        self.navigationController?.navigationBar.topItem?.title = user
-        self.loadObjects()
-        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,8 +66,13 @@ class UserViewController: PFQueryTableViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.loadObjects()
+        super.viewWillAppear(animated)
+    }
+    
     override func queryForTable() -> PFQuery {
-        let query = PFQuery(className: self.parseClassName!).whereKey("user", equalTo: user)
+        let query = PFQuery(className: self.parseClassName!).whereKey("user", matchesKey: "toUser", inQuery: PFQuery(className:"Follow").whereKey("fromUser", equalTo: PFUser.currentUser()!.username!))
         
         // If no objects are loaded in memory, we look to the cache first to fill the table
         // and then subsequently do a query against the network.
@@ -122,7 +114,7 @@ class UserViewController: PFQueryTableViewController {
                 }
             }
             
-
+            
         }
         
         return cell
